@@ -24,22 +24,21 @@ class ViewController: UIViewController {
     
     @IBAction func addData(){
         
-        let getData = ParkingDAO()
+        let parkingDAO = ParkingDAO()
         
         let parking = Parking()
         
         parking.initWithData(
             firstName:tfFirstName.text!,
-            lastName:tfFirstName.text!,
-            email:tfFirstName.text!,
-            licensePlate:tfFirstName.text!,
+            lastName:tfLastName.text!,
+            email:tfEmail.text!,
+            licensePlate:tfLicensePlate.text!,
             startTime:parking.convertDateToTimeString(date: dtStartTime.date),
-            endTime:tfFirstName.text!,
-            creditCardNumber:tfFirstName.text!,
-            cvcNumber: tfFirstName.text!)
-    
+            endTime:parking.convertDateToTimeString(date: dtEndTime.date),
+            creditCardNumber:tfCreditCard.text!,
+            cvcNumber: tfCvcNumber.text!)
         
-        getData.jsonParser(parking: parking)
+        parkingDAO.inserParking(parking: parking)
         
     }
     

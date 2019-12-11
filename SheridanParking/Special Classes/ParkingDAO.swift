@@ -10,18 +10,14 @@ import UIKit
 
 class ParkingDAO: NSObject {
 
-     var dbData : [NSDictionary]?
      let myUrl = "https://sing5745.dev.fast.sheridanc.on.ca/prog39856/insert_parking.php"
         
-        //"https://sing5745.dev.fast.sheridanc.on.ca/prog39856/getScore.php"
-        
-        enum JSONError : String, Error {
-            
+    enum JSONError : String, Error {
             case NoData = "Error: No Data"
             case ConversionFailed = "Error: conversion from JSON failed"
-        }
+    }
         
-    func jsonParser(parking:Parking){
+    func inserParking(parking:Parking){
             
             let endPoint = URL(string: myUrl)
             var request = URLRequest(url: endPoint!)

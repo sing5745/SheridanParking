@@ -59,12 +59,9 @@ class Parking: NSObject {
     func convertDateToTimeString(date: Date) -> String {
         
         let calendar = Calendar.current
-               
         let dateFormatter = DateFormatter()
-               
         dateFormatter.dateFormat = "dd MMM HH:mm"
-               
-               
+     
         return (dateFormatter.string(from: date))
         
     }
