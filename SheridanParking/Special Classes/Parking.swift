@@ -9,15 +9,16 @@
 import UIKit
 
 class Parking: NSObject {
+    
     var firstName : String?
     var lastName : String?
-    
     var email : String?
     var licensePlate : String?
     var startTime: String?
     var endTime: String?
     var creditCardNumber: String?
     var cvcNumber: String?
+    var campus: String?
     
     func initWithData( firstName:String,
                        lastName:String,
@@ -26,7 +27,8 @@ class Parking: NSObject {
                        startTime:String,
                        endTime:String,
                        creditCardNumber:String,
-                       cvcNumber: String)
+                       cvcNumber: String,
+                       campus: String)
     {
         
         self.firstName = firstName
@@ -37,6 +39,7 @@ class Parking: NSObject {
         self.endTime = endTime
         self.creditCardNumber = creditCardNumber
         self.cvcNumber = cvcNumber
+        self.campus = campus
         
     }
     
@@ -52,13 +55,13 @@ class Parking: NSObject {
             + "&end_time=\(self.startTime ?? "bad data")"
             + "&credit_number=\(self.creditCardNumber ?? "bad data")"
             + "&cvc_number=\(self.cvcNumber ?? "bad data")"
+            + "&campus=\(self.campus ?? "bad data")"
         
         return dataString
     }
     
     func convertDateToTimeString(date: Date) -> String {
         
-        let calendar = Calendar.current
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MMM HH:mm"
      
