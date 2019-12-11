@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE8DC41F239EDDD30041BCF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC41E239EDDD30041BCF3 /* AppDelegate.swift */; };
+		AE8DC421239EDDD30041BCF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC420239EDDD30041BCF3 /* SceneDelegate.swift */; };
+		AE8DC423239EDDD30041BCF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC422239EDDD30041BCF3 /* ViewController.swift */; };
+		AE8DC426239EDDD30041BCF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC424239EDDD30041BCF3 /* Main.storyboard */; };
+		AE8DC428239EDDD50041BCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC427239EDDD50041BCF3 /* Assets.xcassets */; };
+		AE8DC42B239EDDD50041BCF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC429239EDDD50041BCF3 /* LaunchScreen.storyboard */; };
+		AE8DC430239EDDD50041BCF3 /* SheridanParking WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AE8DC42F239EDDD50041BCF3 /* SheridanParking WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE8DC436239EDDD50041BCF3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC434239EDDD50041BCF3 /* Interface.storyboard */; };
+		AE8DC438239EDDD70041BCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC437239EDDD70041BCF3 /* Assets.xcassets */; };
+		AE8DC43F239EDDD70041BCF3 /* SheridanParking WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE8DC43E239EDDD70041BCF3 /* SheridanParking WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE8DC444239EDDD70041BCF3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC443239EDDD70041BCF3 /* InterfaceController.swift */; };
+		AE8DC446239EDDD70041BCF3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC445239EDDD70041BCF3 /* ExtensionDelegate.swift */; };
+		AE8DC448239EDDD80041BCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC447239EDDD80041BCF3 /* Assets.xcassets */; };
+		AE8DC45A239EEBA60041BCF3 /* ParkingDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC459239EEBA60041BCF3 /* ParkingDAO.swift */; };
+		AE8DC45C239F57AF0041BCF3 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC45B239F57AF0041BCF3 /* Parking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE8DC431239EDDD50041BCF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE8DC413239EDDD30041BCF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE8DC42E239EDDD50041BCF3;
+			remoteInfo = "SheridanParking WatchKit App";
+		};
+		AE8DC440239EDDD70041BCF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE8DC413239EDDD30041BCF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE8DC43D239EDDD70041BCF3;
+			remoteInfo = "SheridanParking WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE8DC44F239EDDD80041BCF3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE8DC43F239EDDD70041BCF3 /* SheridanParking WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8DC453239EDDD80041BCF3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AE8DC430239EDDD50041BCF3 /* SheridanParking WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE8DC41B239EDDD30041BCF3 /* SheridanParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheridanParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8DC41E239EDDD30041BCF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE8DC420239EDDD30041BCF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE8DC422239EDDD30041BCF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE8DC425239EDDD30041BCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE8DC427239EDDD50041BCF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE8DC42A239EDDD50041BCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE8DC42C239EDDD50041BCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8DC42F239EDDD50041BCF3 /* SheridanParking WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SheridanParking WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8DC435239EDDD50041BCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AE8DC437239EDDD70041BCF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE8DC439239EDDD70041BCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8DC43E239EDDD70041BCF3 /* SheridanParking WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SheridanParking WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8DC443239EDDD70041BCF3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AE8DC445239EDDD70041BCF3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AE8DC447239EDDD80041BCF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE8DC449239EDDD80041BCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8DC459239EEBA60041BCF3 /* ParkingDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDAO.swift; sourceTree = "<group>"; };
+		AE8DC45B239F57AF0041BCF3 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE8DC418239EDDD30041BCF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8DC43B239EDDD70041BCF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE8DC412239EDDD30041BCF3 = {
+			isa = PBXGroup;
+			children = (
+				AE8DC41D239EDDD30041BCF3 /* SheridanParking */,
+				AE8DC433239EDDD50041BCF3 /* SheridanParking WatchKit App */,
+				AE8DC442239EDDD70041BCF3 /* SheridanParking WatchKit Extension */,
+				AE8DC41C239EDDD30041BCF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE8DC41C239EDDD30041BCF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE8DC41B239EDDD30041BCF3 /* SheridanParking.app */,
+				AE8DC42F239EDDD50041BCF3 /* SheridanParking WatchKit App.app */,
+				AE8DC43E239EDDD70041BCF3 /* SheridanParking WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE8DC41D239EDDD30041BCF3 /* SheridanParking */ = {
+			isa = PBXGroup;
+			children = (
+				AE8DC458239EEB3F0041BCF3 /* Special Classes */,
+				AE8DC457239EEB380041BCF3 /* Controllers */,
+				AE8DC424239EDDD30041BCF3 /* Main.storyboard */,
+				AE8DC427239EDDD50041BCF3 /* Assets.xcassets */,
+				AE8DC429239EDDD50041BCF3 /* LaunchScreen.storyboard */,
+				AE8DC42C239EDDD50041BCF3 /* Info.plist */,
+			);
+			path = SheridanParking;
+			sourceTree = "<group>";
+		};
+		AE8DC433239EDDD50041BCF3 /* SheridanParking WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AE8DC434239EDDD50041BCF3 /* Interface.storyboard */,
+				AE8DC437239EDDD70041BCF3 /* Assets.xcassets */,
+				AE8DC439239EDDD70041BCF3 /* Info.plist */,
+			);
+			path = "SheridanParking WatchKit App";
+			sourceTree = "<group>";
+		};
+		AE8DC442239EDDD70041BCF3 /* SheridanParking WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE8DC443239EDDD70041BCF3 /* InterfaceController.swift */,
+				AE8DC445239EDDD70041BCF3 /* ExtensionDelegate.swift */,
+				AE8DC447239EDDD80041BCF3 /* Assets.xcassets */,
+				AE8DC449239EDDD80041BCF3 /* Info.plist */,
+			);
+			path = "SheridanParking WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AE8DC457239EEB380041BCF3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE8DC422239EDDD30041BCF3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE8DC458239EEB3F0041BCF3 /* Special Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AE8DC41E239EDDD30041BCF3 /* AppDelegate.swift */,
+				AE8DC420239EDDD30041BCF3 /* SceneDelegate.swift */,
+				AE8DC459239EEBA60041BCF3 /* ParkingDAO.swift */,
+				AE8DC45B239F57AF0041BCF3 /* Parking.swift */,
+			);
+			path = "Special Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE8DC41A239EDDD30041BCF3 /* SheridanParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8DC454239EDDD80041BCF3 /* Build configuration list for PBXNativeTarget "SheridanParking" */;
+			buildPhases = (
+				AE8DC417239EDDD30041BCF3 /* Sources */,
+				AE8DC418239EDDD30041BCF3 /* Frameworks */,
+				AE8DC419239EDDD30041BCF3 /* Resources */,
+				AE8DC453239EDDD80041BCF3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE8DC432239EDDD50041BCF3 /* PBXTargetDependency */,
+			);
+			name = SheridanParking;
+			productName = SheridanParking;
+			productReference = AE8DC41B239EDDD30041BCF3 /* SheridanParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE8DC42E239EDDD50041BCF3 /* SheridanParking WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8DC450239EDDD80041BCF3 /* Build configuration list for PBXNativeTarget "SheridanParking WatchKit App" */;
+			buildPhases = (
+				AE8DC42D239EDDD50041BCF3 /* Resources */,
+				AE8DC44F239EDDD80041BCF3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE8DC441239EDDD70041BCF3 /* PBXTargetDependency */,
+			);
+			name = "SheridanParking WatchKit App";
+			productName = "SheridanParking WatchKit App";
+			productReference = AE8DC42F239EDDD50041BCF3 /* SheridanParking WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AE8DC43D239EDDD70041BCF3 /* SheridanParking WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8DC44C239EDDD80041BCF3 /* Build configuration list for PBXNativeTarget "SheridanParking WatchKit Extension" */;
+			buildPhases = (
+				AE8DC43A239EDDD70041BCF3 /* Sources */,
+				AE8DC43B239EDDD70041BCF3 /* Frameworks */,
+				AE8DC43C239EDDD70041BCF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SheridanParking WatchKit Extension";
+			productName = "SheridanParking WatchKit Extension";
+			productReference = AE8DC43E239EDDD70041BCF3 /* SheridanParking WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE8DC413239EDDD30041BCF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Inderpreet Singh";
+				TargetAttributes = {
+					AE8DC41A239EDDD30041BCF3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					AE8DC42E239EDDD50041BCF3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					AE8DC43D239EDDD70041BCF3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = AE8DC416239EDDD30041BCF3 /* Build configuration list for PBXProject "SheridanParking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE8DC412239EDDD30041BCF3;
+			productRefGroup = AE8DC41C239EDDD30041BCF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE8DC41A239EDDD30041BCF3 /* SheridanParking */,
+				AE8DC42E239EDDD50041BCF3 /* SheridanParking WatchKit App */,
+				AE8DC43D239EDDD70041BCF3 /* SheridanParking WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE8DC419239EDDD30041BCF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8DC42B239EDDD50041BCF3 /* LaunchScreen.storyboard in Resources */,
+				AE8DC428239EDDD50041BCF3 /* Assets.xcassets in Resources */,
+				AE8DC426239EDDD30041BCF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8DC42D239EDDD50041BCF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8DC438239EDDD70041BCF3 /* Assets.xcassets in Resources */,
+				AE8DC436239EDDD50041BCF3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8DC43C239EDDD70041BCF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8DC448239EDDD80041BCF3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE8DC417239EDDD30041BCF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8DC423239EDDD30041BCF3 /* ViewController.swift in Sources */,
+				AE8DC41F239EDDD30041BCF3 /* AppDelegate.swift in Sources */,
+				AE8DC45C239F57AF0041BCF3 /* Parking.swift in Sources */,
+				AE8DC421239EDDD30041BCF3 /* SceneDelegate.swift in Sources */,
+				AE8DC45A239EEBA60041BCF3 /* ParkingDAO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8DC43A239EDDD70041BCF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8DC446239EDDD70041BCF3 /* ExtensionDelegate.swift in Sources */,
+				AE8DC444239EDDD70041BCF3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE8DC432239EDDD50041BCF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE8DC42E239EDDD50041BCF3 /* SheridanParking WatchKit App */;
+			targetProxy = AE8DC431239EDDD50041BCF3 /* PBXContainerItemProxy */;
+		};
+		AE8DC441239EDDD70041BCF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE8DC43D239EDDD70041BCF3 /* SheridanParking WatchKit Extension */;
+			targetProxy = AE8DC440239EDDD70041BCF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE8DC424239EDDD30041BCF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE8DC425239EDDD30041BCF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE8DC429239EDDD50041BCF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE8DC42A239EDDD50041BCF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE8DC434239EDDD50041BCF3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE8DC435239EDDD50041BCF3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE8DC44A239EDDD80041BCF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE8DC44B239EDDD80041BCF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE8DC44D239EDDD80041BCF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SheridanParking WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.prog3948.SheridanParking.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		AE8DC44E239EDDD80041BCF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SheridanParking WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.prog3948.SheridanParking.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		AE8DC451239EDDD80041BCF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SheridanParking_WatchKit_Extension;
+				INFOPLIST_FILE = "SheridanParking WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.prog3948.SheridanParking.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		AE8DC452239EDDD80041BCF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SheridanParking_WatchKit_Extension;
+				INFOPLIST_FILE = "SheridanParking WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.prog3948.SheridanParking.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		AE8DC455239EDDD80041BCF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SheridanParking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.prog3948.SheridanParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE8DC456239EDDD80041BCF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SheridanParking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.prog3948.SheridanParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE8DC416239EDDD30041BCF3 /* Build configuration list for PBXProject "SheridanParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8DC44A239EDDD80041BCF3 /* Debug */,
+				AE8DC44B239EDDD80041BCF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8DC44C239EDDD80041BCF3 /* Build configuration list for PBXNativeTarget "SheridanParking WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8DC44D239EDDD80041BCF3 /* Debug */,
+				AE8DC44E239EDDD80041BCF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8DC450239EDDD80041BCF3 /* Build configuration list for PBXNativeTarget "SheridanParking WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8DC451239EDDD80041BCF3 /* Debug */,
+				AE8DC452239EDDD80041BCF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8DC454239EDDD80041BCF3 /* Build configuration list for PBXNativeTarget "SheridanParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8DC455239EDDD80041BCF3 /* Debug */,
+				AE8DC456239EDDD80041BCF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE8DC413239EDDD30041BCF3 /* Project object */;
+}
