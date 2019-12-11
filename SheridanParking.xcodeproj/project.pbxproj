@@ -22,6 +22,8 @@
 		AE8DC448239EDDD80041BCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8DC447239EDDD80041BCF3 /* Assets.xcassets */; };
 		AE8DC45A239EEBA60041BCF3 /* ParkingDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC459239EEBA60041BCF3 /* ParkingDAO.swift */; };
 		AE8DC45C239F57AF0041BCF3 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC45B239F57AF0041BCF3 /* Parking.swift */; };
+		AE8E94E923A16FC4002AAE41 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8E94E823A16FC4002AAE41 /* DataTableViewController.swift */; };
+		AE8E94EB23A17213002AAE41 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8E94EA23A17213002AAE41 /* ParkingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		AE8DC449239EDDD80041BCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE8DC459239EEBA60041BCF3 /* ParkingDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDAO.swift; sourceTree = "<group>"; };
 		AE8DC45B239F57AF0041BCF3 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		AE8E94E823A16FC4002AAE41 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
+		AE8E94EA23A17213002AAE41 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				AE8DC422239EDDD30041BCF3 /* ViewController.swift */,
+				AE8E94E823A16FC4002AAE41 /* DataTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				AE8DC420239EDDD30041BCF3 /* SceneDelegate.swift */,
 				AE8DC459239EEBA60041BCF3 /* ParkingDAO.swift */,
 				AE8DC45B239F57AF0041BCF3 /* Parking.swift */,
+				AE8E94EA23A17213002AAE41 /* ParkingTableViewCell.swift */,
 			);
 			path = "Special Classes";
 			sourceTree = "<group>";
@@ -312,8 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8DC423239EDDD30041BCF3 /* ViewController.swift in Sources */,
+				AE8E94E923A16FC4002AAE41 /* DataTableViewController.swift in Sources */,
 				AE8DC41F239EDDD30041BCF3 /* AppDelegate.swift in Sources */,
 				AE8DC45C239F57AF0041BCF3 /* Parking.swift in Sources */,
+				AE8E94EB23A17213002AAE41 /* ParkingTableViewCell.swift in Sources */,
 				AE8DC421239EDDD30041BCF3 /* SceneDelegate.swift in Sources */,
 				AE8DC45A239EEBA60041BCF3 /* ParkingDAO.swift in Sources */,
 			);

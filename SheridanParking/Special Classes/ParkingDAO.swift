@@ -10,7 +10,8 @@ import UIKit
 
 class ParkingDAO: NSObject {
 
-     let myUrl = "https://sing5745.dev.fast.sheridanc.on.ca/prog39856/insert_parking.php"
+    var parkingData : [NSDictionary]?
+    let myUrl = "https://sing5745.dev.fast.sheridanc.on.ca/prog39856/insert_parking.php"
         
     enum JSONError : String, Error {
             case NoData = "Error: No Data"
@@ -56,6 +57,48 @@ class ParkingDAO: NSObject {
             
             
         }
+    
+    func jsonParser(){
+        
+        let endPoint = URL(string: "https://sing5745.dev.fast.sheridanc.on.ca/prog39856/getParkings.php")
+        let request = URLRequest(url: endPoint!)
+        
+        
+        URLSession.shared.dataTask(with: request){
+            (data, response, error) in
+            
+            do {
+                let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                print(dataString!)
+                
+                guard let data = data else {
+                    throw JSONError.NoData
+                }
+                
+                guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? [NSDictionary] else {
+                    throw JSONError.ConversionFailed
+                }
+                print(json)
+                self.parkingData = json
+                
+            }catch let error as JSONError {
+                
+                print(error.rawValue)
+                
+            }
+            catch let error as NSError {
+                
+                print(error.debugDescription)
+                
+            }
+            
+            
+        }.resume()
+        
+        
+    }
+    
+    
         
     
 }
